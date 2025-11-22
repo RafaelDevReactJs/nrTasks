@@ -10,20 +10,20 @@ function EmptyState() {
         <ClipboardListIcon className="w-12 h-12 text-gray-400" />
       </div>
       
-      <h2 className="text-2xl font-bold text-gray-800 mb-2">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 text-center px-4">
         Nenhuma tarefa cadastrada
       </h2>
       
-      <p className="text-gray-600 text-center mb-8 max-w-md">
+      <p className="text-gray-600 text-center mb-8 max-w-md px-4 text-sm sm:text-base">
         Comece a organizar suas tarefas criando sua primeira tarefa. 
         Clique no botão abaixo para adicionar uma nova tarefa.
       </p>
       
       <button
         onClick={() => navigate("/add-task")}
-        className="inline-flex items-center gap-2 px-6 py-3 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors font-medium shadow-md"
+        className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors font-medium shadow-md text-sm sm:text-base"
       >
-        <PlusIcon className="w-5 h-5" />
+        <PlusIcon className="w-4 h-4 sm:w-5 sm:h-5" />
         Criar Primeira Tarefa
       </button>
     </div>

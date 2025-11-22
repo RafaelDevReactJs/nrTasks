@@ -30,7 +30,7 @@ function TaskDetails() {
                 {/* Título e Status */}
                 <div className="flex items-start justify-between gap-4 pb-4 border-b border-gray-200">
                     <div className="flex-1">
-                        <h1 className="text-1xl font-bold text-gray-800 mb-2">
+                        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 break-words">
                             {task.title}
                         </h1>
                         <div className="flex items-center gap-2">
@@ -89,16 +89,16 @@ function TaskDetails() {
                 </div>
 
                 {/* Ações */}
-                <div className="pt-4 border-t border-gray-200 flex gap-3">
+                <div className="pt-4 border-t border-gray-200 flex flex-col sm:flex-row gap-3">
                     <button
                         onClick={() => navigate("/")}
-                        className="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors font-medium"
+                        className="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors font-medium text-sm sm:text-base"
                     >
                         Voltar para Listagem
                     </button>
                     <button
                         onClick={() => navigate("/add-task")}
-                        className="flex-1 px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors font-medium"
+                        className="flex-1 px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors font-medium text-sm sm:text-base"
                     >
                         Nova Tarefa
                     </button>

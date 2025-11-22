@@ -9,9 +9,9 @@ function Modal({ isOpen, onClose, title, message, type = "error" }) {
   const buttonColor = type === "error" ? "bg-red-600 hover:bg-red-700" : "bg-blue-900 hover:bg-blue-800";
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
-      <div className="bg-white border border-gray-200 rounded-lg shadow-xl max-w-md w-full mx-4">
-        <div className="p-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
+      <div className="bg-white border border-gray-200 rounded-lg shadow-xl max-w-md w-full">
+        <div className="p-4 sm:p-6">
           <div className="flex items-start justify-between mb-4">
             <div className={`flex items-center gap-3 ${titleColor}`}>
               <h3 className="text-lg font-bold">{title}</h3>
